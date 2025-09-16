@@ -1,9 +1,17 @@
-# Python DDS Static Analysis Scripts
+# Python DDS Example Scripts
+
+
+- Admin Console Discovery Export XML analysis to Excel file [ddsanalyze](#dds_analyzepy)
+- Admin Console Discovery Export XML csv export of DDS entities using Pandas [ddsanalyzev3](#dds_analyze_v3py)
+- Live DDS system capture of endpoints and export to CSV for analysis [ddscapture](#dds_capturepy)
+- Live DDS System terminal UI to discover endpoints and subscribe for debugging [ddspy](#dds_spypy)
 
 
 ## dds_analyze.py
 
 ### Dependencies:
+- RTI Python API
+- OpenPyXL
 
 #### openpyxl
 `pip install openpyxl`
@@ -21,6 +29,8 @@ It will also create an analysis tab that provides high level insight into DDS To
 ## dds_analyze_v3.py
 
 ### Dependencies:
+- RTI Python API
+- Pandas
 
 #### pandas
 `pip install pandas`
@@ -45,6 +55,8 @@ This script will parse through an Admin Console discovery export file and output
 ## dds_capture.py
 
 ### Dependencies:
+- RTI Python API
+
 
 #### Connext Python API
 - RTI Connext Python API modules
@@ -62,3 +74,22 @@ This script will parse through an Admin Console discovery export file and output
 
 Let run for a few minutes. CTRL-C will stop capture and export entities discovered
 
+
+## dds_spy.py
+
+### Dependencies:
+- RTI Python API
+- Textual
+
+### textual
+`pip install textual textual-dev`
+
+### Overview
+Example tool to deploy onto systems for use in integration debugging without a license  
+as it uses the Python libraries.
+
+Implements a terminal based UI navigation to allow for headless/ssh use cases.
+
+
+### Usage:
+`python rtispy.py --domain 1`
