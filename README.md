@@ -7,13 +7,19 @@
 - Live DDS System terminal UI to discover endpoints and subscribe for debugging [ddspy](#dds_spypy)
 
 
+*Tested with Python 3.8.10*
+
+
 ## dds_analyze.py
 
 ### Dependencies:
 - RTI Python API
 - OpenPyXL
 
-#### openpyxl
+#### Connext Python API
+- [RTI Connext Python API modules](#https://community.rti.com/static/documentation/connext-dds/current/doc/manuals/connext_dds_professional/installation_guide/installing.html#installing-python-c-or-ada-packages)
+
+#### OpenPyXL
 `pip install openpyxl`
 
 ### Overview:
@@ -32,7 +38,10 @@ It will also create an analysis tab that provides high level insight into DDS To
 - RTI Python API
 - Pandas
 
-#### pandas
+#### Connext Python API
+- [RTI Connext Python API modules](#https://community.rti.com/static/documentation/connext-dds/current/doc/manuals/connext_dds_professional/installation_guide/installing.html#installing-python-c-or-ada-packages)
+
+#### Pandas
 `pip install pandas`
 
 
@@ -59,7 +68,7 @@ This script will parse through an Admin Console discovery export file and output
 
 
 #### Connext Python API
-- RTI Connext Python API modules
+- [RTI Connext Python API modules](#https://community.rti.com/static/documentation/connext-dds/current/doc/manuals/connext_dds_professional/installation_guide/installing.html#installing-python-c-or-ada-packages)
 
 ### Overview:
 - Captures all discovered participants (IP address and Name)
@@ -81,7 +90,10 @@ Let run for a few minutes. CTRL-C will stop capture and export entities discover
 - RTI Python API
 - Textual
 
-### textual
+#### Connext Python API
+- [RTI Connext Python API modules](#https://community.rti.com/static/documentation/connext-dds/current/doc/manuals/connext_dds_professional/installation_guide/installing.html#installing-python-c-or-ada-packages)
+
+### Textual
 `pip install textual textual-dev`
 
 ### Overview
