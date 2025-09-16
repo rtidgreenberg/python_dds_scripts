@@ -11,7 +11,7 @@
 ### Overview:
 This script will parse through an Admin Console discovery export file and create an  
 XMLS spreadsheet with aggregated devices/participants/endpoints/topics.
-It will also create an analysis tab that provides high level insigth into DDS Topics/Endpoints
+It will also create an analysis tab that provides high level insight into DDS Topics/Endpoints
 
 ### Usage
 
